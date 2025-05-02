@@ -1,2 +1,0 @@
-# pkgraphix
-Pkgraphix portifolio
