@@ -175,12 +175,14 @@ section {
 }
 
 /* Navbar links */
-.navbar-nav > li > a {
-	padding: 24px 0;
-	margin-left: 25px;
-	text-transform: uppercase;
-	font-size: 13px;
-	font-weight: 600;
+.navbar-nav > li > a{
+  padding: 0 0;            /* remove big vertical padding */
+  margin-left: 25px;
+  height: 60px;           /* match navbar */
+  line-height: 60px;     /* vertical center */
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 /* Navbar dropdown */
