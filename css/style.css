@@ -149,22 +149,17 @@ section {
 
 
 /* Navbar brand (logo) */
-.navbar-brand {
-	background-repeat: no-repeat;
-	background-position: left center;
-	width: 150px;
-	height: auto;
-	padding: 24px 0;
-	text-indent: -99999px;
-	font-size: 24px;
-	font-weight: 600;
-	line-height: 20px;
-	letter-spacing: 4px;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
+
+.navbar-brand{
+  width: 150px;
+  height: 60px;              /* match navbar height */
+  padding: 0;                /* remove extra vertical padding */
+  text-indent: 0;           /* don't hide text if not needed */
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  display: block;
+  margin: 0;
 }
 .navbar-default .navbar-brand {
 	background-image: url(../img/print1.png);
