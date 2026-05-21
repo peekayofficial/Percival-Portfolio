@@ -238,9 +238,11 @@ section {
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
 }
-.navbar-default.navbar-fixed-top.navbar-shrink .navbar-nav > li > a {
-	padding-top: 24px;
-	padding-bottom: 24px;
+.navbar-default.navbar-fixed-top.navbar-shrink .navbar-nav > li > a{
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 60px;
+  line-height: 60px;
 }
 
 /* Navbar transparent */
