@@ -155,6 +155,9 @@ section {
 }
 
 .navbar-brand{
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100px;            /* adjust to your logo size */
   height: 80px;           /* match your navbar height */
   padding: 0;
