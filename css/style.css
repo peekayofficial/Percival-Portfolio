@@ -154,6 +154,49 @@ section {
   position: relative;
 }
 
+/* Ensure navbar height is consistent */
+.navbar {
+  height: 80px;
+}
+
+/* Make the collapsed navbar area match the navbar height */
+.navbar .navbar-collapse {
+  height: 80px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Ensure the nav list also fills the bar */
+.navbar .navbar-nav {
+  height: 80px;
+}
+
+/* Vertically center links and keep them uniform */
+.navbar .navbar-nav > li > a {
+  margin: 0 0 0 25px;     /* left spacing */
+  padding: 0;             /* remove extra vertical padding */
+  height: 80px;
+  line-height: 80px;     /* centers text vertically */
+  display: block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Remove any potential extra top padding on the UL in some templates */
+.navbar .navbar-nav > li {
+  margin: 0;
+  padding: 0;
+}
+
+/* When navbar shrinks (if you use navbar-shrink) */
+.navbar-default.navbar-fixed-top.navbar-shrink .navbar-nav > li > a {
+  height: 60px;
+  line-height: 60px;
+  padding: 0;
+}
+
 .navbar-brand{
   position: absolute;
   top: 0;
