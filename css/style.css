@@ -75,6 +75,85 @@ p {
 }
 /* End Fonts */
 
+/* =========================
+   CONTACT SECTION STYLING
+   ========================= */
+#contact-section .contact-info,
+#contact-section .contact-form {
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+#contact-section .contact-block-title {
+  margin: 0 0 14px 0;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+#contact-section .contact-address {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+#contact-section .contact-address li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+#contact-section .contact-address i {
+  width: 28px;
+  text-align: center;
+  font-size: 18px;
+  color: #6ee7ff; /* accent */
+  margin-top: 2px;
+}
+
+#contact-section .contact-text {
+  font-size: 15px;
+  line-height: 1.45;
+  color: #f3f4f6;
+}
+
+/* Button consistency on dark overlay */
+#contact-section .btn-primary {
+  background: #2563eb;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+}
+
+#contact-section .btn-primary:hover {
+  background: #1d4ed8;
+}
+
+/* Improve form field contrast */
+#contact-section .form-control {
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+#contact-section .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#contact-section textarea.form-control {
+  resize: vertical;
+}
+.
 
 section {
 	position: relative;
