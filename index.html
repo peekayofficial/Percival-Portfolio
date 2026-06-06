@@ -721,61 +721,98 @@
                 
                 
             <!-- Begin contact section -->
-			<section id="contact-section" class="page text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/map-bg.jpg);">
-                <div class="cover"></div>
-                
-                     <!-- Begin page header-->
-                    <div class="page-header-wrapper">
-                        <div class="container">
-                            <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
-                            <h2>Contact</h2>
-                            <div class="devider"></div>
-                            <p class="subtitle">Contact us at:</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End page header-->
-                
-                <div class="contact wow bounceInRight" data-wow-delay="0.4s">
-                    <div class="container">
-                    	<div class="row">
-                        
-                            <div class="col-sm-6">
-                                <div class="contact-info">
-                                    <h4>My Address</h4>
-                                    <!-- <ul class="contact-address"> -->
-			                            <li><i class="fa fa-map-marker fa-lg"></i>&nbsp; 61 Mendel,Avondale Harare,<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Zimbabwe</li>
-			                            <li><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp; +236 78 872 3331</li>
-			                            <li><i class="fa fa-print"></i>&nbsp;&nbsp;&nbsp;&nbsp; +263 71 776 1048</li>
-			                            <li><i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;printcircuitsales@gmail.com</li>
-			                            <!--<li><i class="fa fa-skype"></i>&nbsp;&nbsp;&nbsp;&nbsp;printcircuit</li>-->
-			                        </ul>
-                                </div>
-                            </div>
-                        
-                        	<div class="col-sm-6">
-                                <div class="contact-form">
-                                	<h4>Write to us</h4>
-                                    <form role="form">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control input-lg" id="name" placeholder="Your Name" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control input-lg" id="email" placeholder="E-mail" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <textarea id="message" class="form-control input-lg" rows="5" placeholder="Message" required></textarea>
-                                        </div>
-                                        <button type="submit" class="btn wow bounceInRight" onclick="sendMail()" data-wow-delay="0.8s">Send</button>
-                                    </form>
-                                </div>	
-                            </div>
-                                                                                
-                        </div> <!-- /.row -->
-                    </div> <!-- /.container -->
-                </div>
-            </section>
-            <!-- End contact section -->
+			<section id="contact-section" class="page text-white parallax"
+			  data-stellar-background-ratio="0.5"
+			  style="background-image: url(img/map-bg.jpg);">
+			
+			  <div class="cover"></div>
+			
+			  <!-- Begin page header -->
+			  <div class="page-header-wrapper">
+			    <div class="container">
+			      <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+			        <h2>Contact</h2>
+			        <div class="devider"></div>
+			        <p class="subtitle">Contact us at:</p>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- End page header -->
+			
+			  <div class="contact wow bounceInRight" data-wow-delay="0.4s">
+			    <div class="container">
+			      <div class="row">
+			
+			        <!-- LEFT: Address -->
+			        <div class="col-sm-6">
+			          <div class="contact-info">
+			            <h4 class="contact-block-title">My Address</h4>
+			
+			            <ul class="contact-address">
+			              <li>
+			                <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+			                <div class="contact-text">
+			                  61 Mendel, Avondale, Harare,<br>
+			                  Zimbabwe
+			                </div>
+			              </li>
+			
+			              <li>
+			                <i class="fa fa-phone" aria-hidden="true"></i>
+			                <div class="contact-text">
+			                  +236 78 872 3331
+			                </div>
+			              </li>
+			
+			              <li>
+			                <i class="fa fa-print" aria-hidden="true"></i>
+			                <div class="contact-text">
+			                  +263 71 776 1048
+			                </div>
+			              </li>
+			
+			              <li>
+			                <i class="fa fa-envelope" aria-hidden="true"></i>
+			                <div class="contact-text">
+			                  printcircuitsales@gmail.com
+			                </div>
+			              </li>
+			            </ul>
+			          </div>
+			        </div>
+			
+			        <!-- RIGHT: Contact form -->
+			        <div class="col-sm-6">
+			          <div class="contact-form">
+			            <h4 class="contact-block-title">Write to us</h4>
+			
+			            <form role="form" onsubmit="return false;">
+			              <div class="form-group">
+			                <input type="text" class="form-control input-lg" id="name" placeholder="Your Name" required>
+			              </div>
+			
+			              <div class="form-group">
+			                <input type="email" class="form-control input-lg" id="email" placeholder="E-mail" required>
+			              </div>
+			
+			              <div class="form-group">
+			                <textarea id="message" class="form-control input-lg" rows="5" placeholder="Message" required></textarea>
+			              </div>
+			
+			              <button type="submit" class="btn btn-primary btn-lg wow bounceInRight"
+			                onclick="sendMail()"
+			                data-wow-delay="0.8s">
+			                Send
+			              </button>
+			            </form>
+			          </div>
+			        </div>
+			
+			      </div> <!-- /.row -->
+			    </div> <!-- /.container -->
+			  </div>
+			</section>
+			<!-- End contact section -->
                 
                 
 
