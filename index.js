@@ -1,3 +1,5 @@
+emailjs.init("yNzw3Z2MpKZHuTZPn");
+
 function sendMail() {
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
