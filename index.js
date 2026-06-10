@@ -7,7 +7,7 @@ function sendMail() {
         return; 
     }
     
-    emailjs.send("service_b61hjqm", "template_egegq0l", { 
+    emailjs.send("service_zt6nx2n", "template_egegq0l", { 
         from_name: name, 
         from_email: email, 
         message: message 
