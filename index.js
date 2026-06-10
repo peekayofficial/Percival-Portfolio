@@ -7,7 +7,7 @@ function sendMail() {
         return; 
     }
     
-    emailjs.send("service_6p5t0dp", "template_hr81w4c", { 
+    emailjs.send("service_b61hjqm", "template_hr81w4c", { 
         from_name: name, 
         from_email: email, 
         message: message 
@@ -20,6 +20,6 @@ function sendMail() {
     })
     .catch((error) => { 
         console.error("EmailJS Error:", error);
-        alert("Error: " + (error.text || "Please check console (F12) for details."));
+        alert("Error: " + (error.text || "Check console (F12) for details."));
     });
 }
