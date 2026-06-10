@@ -1,5 +1,3 @@
-emailjs.init("yNzw3Z2MpKZHuTZPn");
-
 function sendMail() {
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
@@ -9,7 +7,7 @@ function sendMail() {
         return; 
     }
     
-    emailjs.send("service_b61hjqm", "template_hr81w4c", { 
+    emailjs.send("service_b61hjqm", "template_egegq0l", { 
         from_name: name, 
         from_email: email, 
         message: message 
