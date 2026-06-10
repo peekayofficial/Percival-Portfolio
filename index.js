@@ -19,8 +19,7 @@ function sendMail() {
         document.getElementById('message').value = ''; 
     })
     .catch((error) => { 
-        // --- This part is new and will show the actual error ---
         console.error("EmailJS Error:", error);
-        alert("Error: " + error.text + "\nCheck console (F12) for more details.");
+        alert("Error: " + (error.text || "Please check console (F12) for details."));
     });
 }
