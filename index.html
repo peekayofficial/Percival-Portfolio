@@ -241,7 +241,7 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 		<script type="text/javascript">
 		   (function(){
-		      emailjs.init("VYnFHstjenxZ4njN4");
+		      emailjs.init("yNzw3Z2MpKZHuTZPn");
 		   })();
 		</script>
 
@@ -976,7 +976,10 @@
 		<script src="inc/smoothscroll.js"></script>
 		<script src="js/theme.js"></script>
         <!-- EmailJS send function -->
-         <script>
+           <script>
+            // Make sure this line is present (it should be at the top of the page already)
+            // emailjs.init("yNzw3Z2MpKZHuTZPn");
+            
             function sendMail() {
                 let name = document.getElementById('name').value;
                 let email = document.getElementById('email').value;
@@ -986,7 +989,7 @@
                     return; 
                 }
                 
-                emailjs.send("service_6p5t0dp", "template_hr81w4c", { 
+                emailjs.send("service_b61hjqm", "template_hr81w4c", { 
                     from_name: name, 
                     from_email: email, 
                     message: message 
