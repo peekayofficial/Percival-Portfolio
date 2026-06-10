@@ -1,22 +1,26 @@
-function sendMail(){
-    var params = {
-        name: document.getElementById("name").value ,
-        email: document.getElementById("email").value ,
-        message: document.getElementById("message").value ,
-
-    };
-    const serviceID = "service_b61hjqm";
-    const templateID = "template_egegq0l";
-
-    emailjs
-        .send(serviceID, templateID, params)
-        .then((res) => {
-            document.getElementById("name").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("message").value = "";
-            console.log(res);
-            alert("your message send successfully")
-        })
-        .catch((err) => console.log(err));
+function sendMail() {
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let message = document.getElementById('message').value;
+    if(!name || !email || !message) { 
+        alert("Please fill all fields"); 
+        return; 
+    }
+    
+    emailjs.send("service_6p5t0dp", "template_hr81w4c", { 
+        from_name: name, 
+        from_email: email, 
+        message: message 
+    })
+    .then(() => { 
+        alert("Message sent successfully! We'll get back soon."); 
+        document.getElementById('name').value = ''; 
+        document.getElementById('email').value = ''; 
+        document.getElementById('message').value = ''; 
+    })
+    .catch((error) => { 
+        // --- This part is new and will show the actual error ---
+        console.error("EmailJS Error:", error);
+        alert("Error: " + error.text + "\nCheck console (F12) for more details.");
+    });
 }
-
